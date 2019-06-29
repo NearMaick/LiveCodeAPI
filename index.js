@@ -37,8 +37,6 @@ server.use((req, res, next) => {
   console.log(`Número de requisições: ${numberOfRequests}`);
 
   next();
-
-  console.timeEnd("Request");
 });
 //POST /projects => criar projeto ({ id: "1", title: "Novo projeto", tasks: [] })
 server.post("/projects", (req, res) => {
