@@ -52,5 +52,10 @@ git remote add <nome> <url>
 git remote -v
 //sincroniza o repositorio local com o remoto
 git push origin master
+//baixar o conteudo do repositório remoto no git local
+git clone <url> <nome_da_pasta>
+//baixa as alterações do remoto para o local
+git pull <nome> <nome_da_ramificacao>
 
 video: https://www.youtube.com/watch?v=2T2l2rGRzXs
+       https://www.youtube.com/watch?v=Ikq5Yy_Jv6E
