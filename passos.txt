@@ -1,0 +1,56 @@
+//inicializa o yarn para desenvolver aplicação
+yarn init -y
+
+//instala o express e suas dependencias
+yarn add express
+
+//executa o arquivo no node
+node index.js
+
+//instala a dependencia nodemon em modo de desenvolvimento
+yarn add nodemon -D
+
+//configura a execução do arquivo automaticamente
+//package.json
+"scripts": {
+    "dev": "nodemon index.js"
+  },
+
+yarn dev
+
+---------------------git--------------------------
+//inicia o git
+git init
+//adiciona um arquivo para versionamento
+git add <nome_do_arquivo.extensao> ou /<pasta>.<extensao ou . (todos)
+//verifica a condição dos commits dos arquivos
+git status
+//valida as alterações do arquivo e deixa uma mensagem
+git commit -m "chore: sua mensagem sobre o commit"
+//verifica o historico do git
+git log
+//verifica quais linhas de quais arquivos foram alteradas
+git diff
+//esse arquivo exclui arquivos do rastreamento do git
+.gitignore
+//verifica o status antes do commit selecionado
+git checkout <codigo_commit> (pode acessar uma ramificação com o git checkout <nome_da_ramificacao>)
+//verifica o conteudo do arquivo
+cat <nome_do_arquivo.extensao>
+//cria uma ramificação no git
+git branch <nome_da_ramificacao>
+//insere os arquivos de uma ramificaçao à outra (ramificação MASTER)
+git merge <nome_da_ramificacao>
+//apaga uma ramificação do git
+git branch -D <nome_da_ramificacao>
+
+--------------------------github--------------------------------
+//adiciona um reposirorio já criado no GitHub, e sincroniza com o local
+//<nome> pode ser definido como origin
+git remote add <nome> <url>
+//lista os repositorios remotos
+git remote -v
+//sincroniza o repositorio local com o remoto
+git push origin master
+
+video: https://www.youtube.com/watch?v=2T2l2rGRzXs
